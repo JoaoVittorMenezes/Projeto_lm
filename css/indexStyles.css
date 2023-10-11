@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(90deg, #F861FC -19.01%, #E430EA -11.96%, #D70DDE -4.91%, #D200DA -1.38%, #9F0DB9 10.96%, #74199E 23.3%, #55218A 33.88%, #42277E 42.69%, #3C297A 49.74%, #392E7C 56.79%, #313F85 67.37%, #245A92 77.95%, #127FA5 90.29%, #02A3B7 99.1%);
+
+}
+
+header {
+    display: flex;
+    background-color: #24202B;
+    height: 8%;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.30);
+    position: relative;
+}
+
+#headerLogo {
+    display: flex;
+    align-items: center;
+    margin-left: 3rem;
+    gap: 0.5rem;
+}
+
+#logoSVG {
+    height: 3rem;
+}
+
+.title {
+    color: #fff;
+    font-size: 2rem;
+}
+
+#about {
+    color: #fff;
+    font-size: 1rem;
+}
+
+#about:hover {
+    border-bottom: 2px solid #2CFFF2;
+}
+
+#login {
+    color: #fff;
+    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #2CFFF2;
+    border-radius: 100px;
+    color: #24202B;
+}
+
+#login:hover {
+    background-color: #19b8ad;
+    cursor: pointer;
+    box-shadow: -4px 6px 10px rgba(0, 0, 0, 0.30);
+}
+
+#headerLinks {
+    margin-right: 3rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+h1 {
+    color: #fff;
+}
+
+#genius {
+    color: #2CFFF2;
+}
+
+main {
+    height: 92%;
+    width: 100%;
+    display: flex;
+}
+
+.info {
+    width: 35rem;
+    display: flex;
+    padding-left: 15rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info h1 {
+    font-size: 4rem;
+    color: #fff;
+    line-height: 90%;
+    margin-bottom: 1.5rem;
+}
+
+.info p {
+    font-size: 1rem;
+    color: #fff;
+}
+
+button {
+    background-color: #24202A;
+    padding: 1rem 3rem;
+    border-radius: 100px;
+    border: none;
+    font-size: 1.3rem;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #1c1822;
+    box-shadow: -2px 3px 8px rgba(0, 0, 0, 0.30);
+}
+
+#laptopSVG {
+    height: 90%;
+    padding: 5rem 0 0 5rem;
+    width: 90%;
+}
+
+@media only screen and (max-width: 1500px) {
+    main {
+        height: 80%;
+    }
+    #laptopSVG {
+        padding: 3rem 0 0 3rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .info {
+        height: 80%;
+        padding-left: 10rem;
+    }
+    .info h1 {
+        font-size: 2.5rem;
+    }
+    .info p {
+        font-size: 0.8rem
+    }
+    .info button {
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .info {
+        height: 60%;
+        padding: 0;
+    }
+    .img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #laptopSVG {
+        width: 120%;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #headerLinks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        margin: 0;
+    }
+    #headerLogo {
+        margin: 0;
+    }
+    .info {
+        width: 50%;
+    }
+    .info h1 {
+        font-size: 1.8rem;
+    }
+    .info button {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .info h1 {
+        font-size: 1.5rem;
+    }
+    .info p {
+        font-size: 0.6rem;
+    }
+}

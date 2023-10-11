@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    display: flex;
+    background-color: #24202B;
+    height: 8%;
+    align-items: center;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.30);
+    position: relative;
+    justify-content: space-between;
+}
+
+#headerLogo {
+    display: flex;
+    align-items: center;
+    margin-left: 3rem;
+    gap: 0.5rem;
+}
+
+.navBtn {
+    background-color: #24202B;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.navBtn:hover {
+    border-bottom: 2px solid #2CFFF2;
+    cursor: pointer;
+}
+
+#login {
+    color: #fff;
+    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #2CFFF2;
+    border-radius: 100px;
+    color: #24202B;
+    margin-right: 3rem;
+}
+
+#login:hover {
+    background-color: #19b8ad;
+    cursor: pointer;
+    box-shadow: -4px 6px 10px rgba(0, 0, 0, 0.30);
+}
+
+.firstA {
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.30);
+}
+
+
+#logoSVG {
+    height: 3rem;
+}
+
+.title {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.fa-circle-user {
+    font-size: 2.5rem;
+}
+
+h1 {
+    color: #fff;
+}
+
+#genius {
+    color: #2CFFF2;
+}
+
+main {
+    background: linear-gradient(90deg, #F861FC -19.01%, #E430EA -11.96%, #D70DDE -4.91%, #D200DA -1.38%, #9F0DB9 10.96%, #74199E 23.3%, #55218A 33.88%, #42277E 42.69%, #3C297A 49.74%, #392E7C 56.79%, #313F85 67.37%, #245A92 77.95%, #127FA5 90.29%, #02A3B7 99.1%);
+    height: 68%;
+    width: 100%;
+    display: flex;
+}
+
+main h1 {
+    color: #fff;
+    margin: 1rem 0 1rem 0;
+    font-size: 3rem;
+}
+
+.contentText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    height: 100%;
+    width: auto;
+}
+
+.text {
+    color: #fff;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.Info {
+    color:#aaaaaa;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    font-size: 0.8rem;
+}
+
+.Info .fa {
+    margin-right: 5px;
+    font-size: 1.2rem;
+}
+
+footer {
+    height: 24%;
+    background-color: #24202B; 
+    box-shadow: 0px -5px 8px rgba(0, 0, 0, 0.30);
+}
+
+.fa-brands {
+    color: #fff;
+    font-size: 1.2rem;
+    border: 2px solid #fff;
+    padding: 0.6rem;
+    border-radius: 100%;
+}
+
+.fa-brands:hover {
+    background-color: #fff;
+    color: #24202B;
+    cursor: pointer;
+}
+
+.footerInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    color: #fff;
+    margin: 1rem 0;
+}
+
+footer a {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.footerInfo span:hover {
+    cursor: pointer;
+    border-bottom: 2px solid #2CFFF2;
+}
+
+hr {
+    width: 99%;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.socialIcons {
+    margin: 1rem 0;
+    gap: 1rem;
+    display: flex;
+}
+
+.copyright {
+    color: #aaaaaa;
+    font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 1650px) {
+    .text {
+        width: 100%;
+    }
+
+    img {
+        width: 90%;
+        height: 90%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    nav{
+        gap: 1rem;
+    }
+    #headerLogo {
+        margin-left: 2rem;
+    }
+    #headerLinks {
+        margin-right: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    header {
+        height: 16vh;
+    }
+    #headerLogo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #headerLinks {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .text {
+        font-size: 80%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+    .navBtn {
+        font-size: 0.8rem;
+    }
+    #headerLogo {
+        margin-left: 1rem;
+    }
+    #headerLinks {
+        margin-right: 1rem;
+    }
+    .fa-circle-user {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .Info {
+        font-size: 0.5rem;
+    }
+    .copyright {
+        font-size: 0.5rem;
+    }
+    .footerInfo {
+        font-size: 0.8rem;
+    }
+    footer a {
+        font-size: 0.8rem;
+    }
+    main h1 {
+        font-size: 2rem;
+    }
+    .text {
+        font-size: 70%;
+    }
+    .title {
+        font-size: 1.5rem;
+    }
+    #headerLinks {
+        font-size: 0.8rem;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    main h1 {
+        font-size: 1rem;
+    }
+    .text {
+        font-size: 50%;
+    }
+    .text {
+        height: 20rem;
+        width: 20rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #logoSVG {
+        width: 3rem;
+    }
+    .title {
+        font-size: 1rem;
+    }
+}
+

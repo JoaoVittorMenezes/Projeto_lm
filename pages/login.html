@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeGenius</title>
+    <link rel="stylesheet" href="../css/loginStyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a id="headerLogo" href="../index.html">
+                <img id="logoSVG" src="../assets/logoSVG.svg" alt="Logo">
+                <p class="title">
+                    Code<span id="genius">Genius</span>
+                </p>
+            </a>
+        </header>
+        <main>
+            <div class="content">
+                <h1>Fazer Login</h1>
+                    <form action="./mainPage.html" method="get">
+                        <input required type="email" name="email" id="email" placeholder="exemplo@email.com">
+                        <input required type="password" name="senha" id="senha" placeholder="Senha">
+                        <a href="./mainPage.html">
+                            <button type="submit" id="submitButton">Entrar</button>
+                        </a>
+                    </form>
+                <a href="#">   
+                    <p id="forgotPassword">Esqueceu sua senha?</p>
+                </a>
+                    <p id="or">ou</p>
+                <div class="buttons">
+                    <a href="./mainPage.html">
+                        <button id="googleButton">
+                            <i class="fa-brands fa-google"></i>
+                            <span>Fazer login com o Google</span>
+                        </button>
+                    </a>
+                    <a href="./mainPage.html">
+                        <button id="githubButton">
+                            <i class="fa-brands fa-github"></i>
+                            <span>Fazer login com o Github</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="https://kit.fontawesome.com/f9e40fd065.js" crossorigin="anonymous"></script>
+</body>
+</html>
